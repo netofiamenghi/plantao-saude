@@ -1,0 +1,69 @@
+create databese plantao_saude;
+
+create table usuario(
+	id serial primary key,
+	nome varchar(100),
+	email varchar(100),
+	login varchar(100),
+	senha varchar(100),
+	tipo varchar(20),
+	status integer
+);
+
+create table cidade(
+    id serial primary key,
+    nome varchar(100),
+    cep varchar(20),
+    estado char(2)
+);
+
+create table contato(
+    id serial primary key,
+    nome varchar(100),
+    telefone varchar(20),
+    email varchar(100),
+    mensagem varchar(500),
+    data date
+);
+
+create table categoria(
+    id serial primary key,
+    descricao varchar(50),
+    imagem varchar(200),
+    status integer
+);
+
+create table anuncio(
+    id serial primary key,
+    nome varchar(100),
+    razao_social varchar(100),
+    cnpj varchar(30),
+    endereco varchar(100),
+    numero varchar(10),
+    bairro varchar(50),
+    complemento varchar(50),
+    email varchar(50),
+    site varchar(100),
+    localizacao varchar(100),
+    imagem varchar(100),
+    logo varchar(100),
+    id_categoria integer,
+    id_cidade integer,
+    status integer,
+    segunda_inicio integer,
+    segunda_termino integer,
+    terca_inicio integer,
+    terca_termino integer,
+    quarta_inicio integer,
+    quarta_termino integer,
+    quinta_inicio integer,
+    quinta_termino integer,
+    sexta_inicio integer,
+    sexta_termino integer,
+    sabado_inicio integer,
+    sabado_termino integer,
+    domingo_inicio integer,
+    domingo_termino integer,
+    constraint fk_categoria foreign key (id_categoria) references categoria (id),
+    constraint fk_cidade foreign key (id_cidade) references cidade (id)
+);

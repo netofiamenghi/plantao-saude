@@ -1,0 +1,209 @@
+/* 
+    Created on : 10/11/2016, 16:57:52
+    Author     : neto
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topo{
+    background-color: #D11F26;
+    width: 100%;
+    min-height: 165px;
+    z-index: 1;
+}
+
+#logo-topo{
+    position: absolute;
+    width: 350px;
+    left: 40px
+}
+
+.formulario{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.formulario li{
+    display: inline;
+}
+
+.conteudo{
+    background-color: #ffffff;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+.conteudo-h1{
+    text-align: center;
+    font-size: 18px;
+    color: #D11F26;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.linha{
+    width: 700px;
+    padding: 15px;
+    margin: 0 auto;
+    border-top: 1px solid gray;
+    clear: both;
+    height: 130px;
+}
+
+.linha-imagem{
+    width: 100px;
+    display: inline;
+    float: left;
+    margin-right: 40px;
+}
+
+.linha-imagem img{
+    width: 100px;
+}
+
+.linha:hover{
+    background-color: #F1F1F1;
+}
+
+.linha-nome-status{
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 200px;
+    display: inline;
+    float: left;
+}
+
+.linha-nome-status ul{
+    display: inline;
+    list-style-type: none;
+}
+
+.linha-nome-status-nome{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.linha-nome-status-desc{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.linha-nome-status-icone-ok{
+    font-size: 20px;
+    color: #7CFA14;
+}
+
+.linha-nome-status-icone-remove{
+    font-size: 20px;
+    color: #D11F26;
+}
+
+.linha-icones{
+    top: 35px;
+    left: -70px;
+}
+
+.rodape{
+    height: 100px;
+    padding-top: 20px;
+    font-family: Purisa;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #D11F26;
+    border-top: 1px solid #D11F26;
+}
+
+.rodape-localidade{
+    position: absolute;
+    top: -1px;
+    left: 30px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 22px;
+    color: #D11F26;
+}
+
+.itemmenu{
+    font-family: Purisa;
+    font-size: 20px;
+    padding-right: 25px;
+    text-shadow: -1px 1px 30px #ffffff;
+}
+
+.itemmenu:link, .itemmenu:visited, .itemmenu:active{
+    color: gray;
+    text-decoration: none;
+}
+
+.itemmenu:hover{
+    color: #D11F26;
+    text-decoration: none;
+    text-shadow: -1px 1px 30px #D11F26;
+}
+
+#i9{
+    position: relative;
+    top: -45px;
+    left: 35%;
+    width: 300px;
+    color: gray;
+}
+
+#i9 a:active, a:link, a:visited{
+    text-decoration: none;
+    color: gray;
+}
+
+#i9 a:hover{
+    color: #D11F26;
+}
+
+#i9 li{
+    display: inline;
+}
+
+#i9 img{
+    width: 60px;
+}
+
+button{
+    width:80px;
+    height: 80px;
+    text-indent:-9000em;
+    overflow:hidden;
+    background:url("../img/plantao_saude_pequeno.png") no-repeat 0 0;
+    background-size: 100%;
+    border: solid 1px #D11F26;
+    margin-left: 10px;
+}
+
+button:hover{
+    border: solid 1px #ffffff;
+}
+
+.form-conteudo{
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.site,.site-inativo,.localizacao,.mais{
+    font-size: 30px;
+}
+
+.site:hover,.localizacao:hover,.mais:hover{
+    color: #D11F26;
+}
+
+.mais{
+    float: right;
+    position: relative;
+    top: 0px;
+}
